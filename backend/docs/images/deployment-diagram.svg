@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100">
+    <defs>
+      <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+        <path d="M0,0 L12,6 L0,12 z" fill="#1D3557"/>
+      </marker>
+      <style>text{font-family:Inter,Arial,sans-serif}</style>
+    </defs>
+    <rect width="100%" height="100%" fill="#ffffff"/>
+    <text x="800.0" y="54" text-anchor="middle" font-size="30" font-family="Inter, Arial, sans-serif" font-weight="700" fill="#1D3557">CultureHub - Deployment Diagram</text>
+    <text x="800.0" y="86" text-anchor="middle" font-size="16" font-family="Inter, Arial, sans-serif" fill="#6B7280">Deploy locale</text>
+    <rect x="90" y="280" width="380" height="210" rx="16" fill="#F8F9FA" stroke="#E5E7EB" stroke-width="2"/>
+<text x="106" y="308" text-anchor="start" font-size="18" font-family="Inter, Arial, sans-serif" font-weight="700" fill="#1F2937">Browser</text>
+<text x="106" y="334" text-anchor="start" font-size="14" font-family="Inter, Arial, sans-serif" fill="#6B7280">React SPA</text>
+<text x="106" y="356" text-anchor="start" font-size="14" font-family="Inter, Arial, sans-serif" fill="#6B7280">Vite dev server</text>
+<text x="106" y="378" text-anchor="start" font-size="14" font-family="Inter, Arial, sans-serif" fill="#6B7280">User interaction</text><rect x="610" y="250" width="390" height="260" rx="16" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+<text x="626" y="278" text-anchor="start" font-size="18" font-family="Inter, Arial, sans-serif" font-weight="700" fill="#1F2937">Backend Python</text>
+<text x="626" y="304" text-anchor="start" font-size="14" font-family="Inter, Arial, sans-serif" fill="#6B7280">FastAPI app</text>
+<text x="626" y="326" text-anchor="start" font-size="14" font-family="Inter, Arial, sans-serif" fill="#6B7280">JWT auth</text>
+<text x="626" y="348" text-anchor="start" font-size="14" font-family="Inter, Arial, sans-serif" fill="#6B7280">SQLAlchemy</text>
+<text x="626" y="370" text-anchor="start" font-size="14" font-family="Inter, Arial, sans-serif" fill="#6B7280">Swagger/OpenAPI</text><rect x="1110" y="280" width="380" height="210" rx="16" fill="#F8F9FA" stroke="#E5E7EB" stroke-width="2"/>
+<text x="1126" y="308" text-anchor="start" font-size="18" font-family="Inter, Arial, sans-serif" font-weight="700" fill="#1F2937">PostgreSQL</text>
+<text x="1126" y="334" text-anchor="start" font-size="14" font-family="Inter, Arial, sans-serif" fill="#6B7280">Local database</text>
+<text x="1126" y="356" text-anchor="start" font-size="14" font-family="Inter, Arial, sans-serif" fill="#6B7280">Tables and seed data</text><line x1="470" y1="385" x2="610" y2="385" stroke="#1D3557" stroke-width="3" marker-end="url(#arrow)"/><line x1="1000" y1="385" x2="1110" y2="385" stroke="#1D3557" stroke-width="3" marker-end="url(#arrow)"/><rect x="600" y="610" width="410" height="110" rx="16" fill="#F8F9FA" stroke="#E5E7EB" stroke-width="2"/>
+<text x="805.0" y="638" text-anchor="middle" font-size="18" font-family="Inter, Arial, sans-serif" font-weight="700" fill="#1F2937">Local Machine</text>
+<text x="805.0" y="664" text-anchor="middle" font-size="14" font-family="Inter, Arial, sans-serif" fill="#6B7280">Single workstation deployment for thesis prototype</text>
+    </svg>

@@ -1,13 +1,15 @@
 import { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import { fetchWork } from '../services/workService';
 import type { Work } from '../types/api';
 import { Loading } from '../components/ui/Loading';
 import { ErrorState } from '../components/ui/ErrorState';
+import { Button } from '../components/ui/Button';
 
 export function WorkDetailPage() {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [work, setWork] = useState<Work | null>(null);
   const [error, setError] = useState('');
 
@@ -22,12 +24,12 @@ export function WorkDetailPage() {
   if (error) return <ErrorState message={error} />;
   if (!work) return <Loading />;
   return (
-    <div className="panel panel-pad grid">
+    <div className="panel detail-panel grid">
+      <p className="eyebrow">Opera · {work.category?.name}</p>
       <h1>{work.title}</h1>
+      <p className="detail-panel__author">{work.author || 'Autore non indicato'}</p>
       <p className="lead">{work.description}</p>
-      <p className="meta">Categoria: {work.category?.name}</p>
-      <Link className="btn btn-primary" to="/catalogo">Torna al catalogo</Link>
+      <Button type="button" variant="ghost" onClick={() => navigate(-1)}>← Torna indietro</Button>
     </div>
   );
 }
-

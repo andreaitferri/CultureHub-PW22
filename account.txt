@@ -1,0 +1,8 @@
+CULTUREHUB – ACCESSO DIMOSTRATIVO
+
+Ruolo: Admin
+Email: culturehub-demo-admin@example.com
+Password: CultureHubDemo123!
+
+Credenziali destinate esclusivamente
+all'ambiente dimostrativo del Project Work PW22.
